@@ -1,0 +1,159 @@
+<header class="header">
+  <div class="header__top">
+    <div class="flex container header__container container">
+      <div class="header__left-block left-block">
+        <picture>
+          <source media="(max-width: 570px)" srcset="img/logo320.avif" type="image/avif" />
+          <source media="(max-width: 570px)" srcset="img/logo320.webp" type="image/webp" />
+          <source media="(max-width: 570px)" srcset="img/logo320.png">
+          <source media="(max-width: 1200px)" srcset="img/logo1024.avif" type="image/avif" />
+          <source media="(max-width: 1200px)" srcset="img/logo1024.webp" type="image/webp" />
+          <source media="(max-width: 1200px)" srcset="img/logo1024.png">
+          <source srcset="img/logo.avif" type="image/avif" />
+          <source srcset="img/logo.webp" type="image/webp" />
+          <img src="img/logo.png" alt="Логотип" class="left-block__logo">
+        </picture>
+      </div>
+      <div class="flex header__right-block right-block">
+        <button id="burger" aria-label="Открыть панель навигации" class="btn-reset right-block__burger burger">
+          <span class="burger__line burger__line-first"></span>
+          <span class="burger__line burger__line-second"></span>
+          <span class="burger__line burger__line-third"></span>
+          <span class="burger__line burger__line-fourth"></span>
+        </button>
+        <nav class="header__nav header-nav">
+          <ul class="flex list-reset header-nav__list">
+            <li class="header-nav__item">
+              <a href="#podcasts" class="header-nav__link">
+                Подкасты
+              </a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#broadcasts" class="header-nav__link">
+                Передачи
+              </a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#guests" class="header-nav__link">
+                Гости
+              </a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#playlists" class="header-nav__link">
+                Плейлисты
+              </a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#about" class="header-nav__link">
+                О&nbsp;нас
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <form class="header__form-search form-search">
+          <input class="form-search__input-search" type="text" placeholder="Поиск по сайту">
+          <button type="submit" class="btn-reset form-search__btn-search" aria-label="Поиск по сайту">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M21 21L16.65 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </form>
+        <button class=" flex btn-reset header__btn-log-in" data-graph-path="first" aria-label="Вход в личный кабинет">
+          <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.5 1.5L2 5.25L9.5 9L17 5.25L9.5 1.5Z" stroke="#121723" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M2 12.75L9.5 16.5L17 12.75" stroke="#121723" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M2 9L9.5 12.75L17 9" stroke="#121723" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          Вход
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom header-bottom">
+    <div class="flex container header-bottom__container">
+      <div class="header-bottom__nav">
+        <ul class="flex list-reset header-bottom__list">
+          <li class="header-bottom__item">
+            <a href="#" class="header-bottom__link">
+              Новости
+            </a>
+          </li>
+          <li class="header-bottom__item">
+            <a href="#" class="header-bottom__link">
+              Блоги
+            </a>
+          </li>
+          <li class="header-bottom__item">
+            <a href="#" class="header-bottom__link">
+              Топы
+            </a>
+          </li>
+          <li class="header-bottom__item">
+            <a href="#" class="header-bottom__link">
+              Опросы
+            </a>
+          </li>
+          <li class="header-bottom__item">
+            <a href="#" class="header-bottom__link">
+              Рейтинги
+            </a>
+          </li>
+          <li class="header-bottom__item">
+            <a href="#" class="header-bottom__link">
+              Реклама
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button class="flex btn-reset header-bottom__btns-mobil" aria-label="Открыть панель управления">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="7.5" cy="7.5" r="7.5" fill="#6D31EE" />
+          <path d="M12 7.00014V8.00014H3V7.00014H12Z" fill="white" />
+          <path d="M8 12.0001H7L7 3.00014L8 3.00014L8 12.0001Z" fill="white" />
+        </svg>
+        Что в эфире?
+      </button>
+      <div class="flex header-bottom__btns bottom-btns">
+        <button class="btn-reset bottom-btns__btn-players bottom-btns__btn-players-archive"
+          aria-label="Запустить архив">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
+              fill="#A1A6B4" />
+          </svg>
+          <svg class="passive" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2Z"
+              fill="#A1A6B4" />
+            <rect x="9" y="8" width="2" height="8" rx="1" fill="white" />
+            <rect x="13" y="8" width="2" height="8" rx="1" fill="white" />
+          </svg>
+        </button>
+        <button class="btn-reset bottom-btns__btn-players bottom-btns__btn-players-ether" aria-label="Запустить эфир">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
+              fill="#A1A6B4" />
+          </svg>
+          <svg class="passive" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2Z"
+              fill="#A1A6B4" />
+            <rect x="9" y="8" width="2" height="8" rx="1" fill="white" />
+            <rect x="13" y="8" width="2" height="8" rx="1" fill="white" />
+          </svg>
+        </button>
+      </div>
+      <img src="img/years.png" alt="Возрастные ограничения" class="header__img">
+    </div>
+  </div>
+</header>

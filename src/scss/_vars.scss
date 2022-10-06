@@ -1,0 +1,47 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Muller", sans-serif;
+  --content-width: 1110px;
+  --container-offset: 32px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --color-white: #fff;
+  --color-primary: #6d31ee;
+  --color-primary_shade: #4f28a5;
+  --color-primary_light: #aa9dfa;
+  --color-light_color: #e6e8ec;
+  --color-text_grey: #a1a6b4;
+  --color-shade_grey: #d2d5dd;
+  --color-light_color40: rgba(230, 232, 236, 0.4);
+  --color-light_color10: rgba(230, 232, 236, 0.1);
+  --color-black: #121723;
+  --color-light_black: #292e39;
+  --color-red: #ff6f6f;
+  --color-promo_color: #f0d288;
+  --color-promo_color_shade: #bb973e;
+  --color-error_color: #ff6f6f;
+}
+
+@media (max-width: (1200px)) {
+  :root {
+    --container-width: 902px;
+    --container-offset: 39px;
+  }
+}
+
+@media (max-width: 902px) {
+  :root {
+    --container-width: 570px;
+    --container-offset: 15px;
+  }
+}
+
+@media (max-width: 570px) {
+  :root {
+    --container-width: 287px;
+    --container-offset: 15px;
+  }
+}

@@ -1,0 +1,139 @@
+.hero {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 35px;
+  }
+
+  &__text {
+    padding-top: 97px;
+    max-width: 635px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-size: 60px;
+    font-weight: 700;
+    & span {
+      font-weight: 400;
+      font-style: italic;
+    }
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 70px;
+    line-height: 1.5;
+
+    &-link {
+      padding: 3px;
+      border-bottom: 1px solid var(--color-white);
+      outline: none;
+      color: var(--color-primary);
+      transition: all 0.4s ease-in-out;
+
+      &:hover {
+        border-color: var(--color-primary);
+      }
+
+      &:focus-visible {
+        color: var(--color-white);
+        background-color: var(--color-primary_light);
+      }
+
+      &:active {
+        border-color: var(--color-primary_shade);
+        color: var(--color-primary_shade);
+      }
+    }
+  }
+
+  &__link {
+    padding: 25px 52px 21px;
+    border: 2px solid var(--color-primary);
+    border-radius: 77px;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      border-color: var(--color-primary_light);
+      background-color: var(--color-primary_light);
+    }
+
+    &:focus-visible {
+      background-color: var(--color-primary_light);
+    }
+
+    &:active {
+      border-color: var(--color-primary_shade);
+      background-color: var(--color-primary_shade);
+    }
+  }
+
+  &__content {
+    padding-top: 38px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    padding-bottom: 50px;
+  }
+
+  .hero__text {
+    max-width: 539px;
+    padding-top: 90px;
+  }
+
+  .hero__desc {
+    margin-bottom: 45px;
+  }
+
+  .hero__content {
+    padding-top: 89px;
+  }
+}
+
+@media (max-width: 902px) {
+  .hero {
+    padding-bottom: 77px;
+  }
+
+  .hero__content {
+    display: none;
+  }
+
+  .hero__text {
+    padding-top: 92px;
+}
+}
+
+@media (max-width: 570px) {
+  .hero {
+    padding-top: 17px;
+    padding-bottom: 19px;
+  }
+
+  .hero__text {
+    padding-top: 24px;
+  }
+
+  .hero__title {
+    margin-bottom: 6px;
+    font-size: 32px;
+  }
+
+  .hero__desc {
+    margin-bottom: 37px;
+    font-size: 14px;
+  }
+
+  .hero__link {
+    padding: 15px 43px;
+    font-size: 16px;
+  }
+}
